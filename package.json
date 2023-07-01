@@ -1,7 +1,7 @@
 {
   "name": "nike",
   "version": "0.1.0",
-  "homepage": "https://riosdrc.github.io/",
+  "homepage": "https://riosdrc.github.io/shoes",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
