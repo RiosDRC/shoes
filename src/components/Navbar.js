@@ -11,9 +11,9 @@ const Navbar = () => {
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-            <Link to="/" id="logo" className="navbar-brand justify-content-start">
+            <a href="/" id="logo" className="navbar-brand justify-content-start">
                 <h1>Shoe<span>s</span></h1>
-            </Link>
+            </a>
             <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">

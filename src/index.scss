@@ -265,6 +265,7 @@ html{
     @media (max-width:800px) {
       overflow: auto;
       display: inline-flex;
+      scroll-snap-type: x mandatory;
     }
 
     .card{
@@ -273,6 +274,7 @@ html{
       margin-inline: 10px;
       min-width: 270px;
       margin-bottom: 20px;
+      scroll-snap-align: center;
       }
       width: 290px;
       height: 440px;
@@ -600,12 +602,14 @@ html{
       height: 390px;
       width: 95%;
       justify-content: flex-start;
+      scroll-snap-type: x mandatory;
     }
 
     .reviewCard{
       @media (max-width:800px) {
         min-height: 300px;
         min-width: 90%;
+        scroll-snap-align: center;
       }
       flex: 30%;
       background: #f3f1f1;
