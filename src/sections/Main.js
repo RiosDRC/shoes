@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { shoes } from "../assets/"
 
 const Main = () => {
     return (
@@ -14,7 +15,7 @@ const Main = () => {
                         remaining essentially unchanged.</p>
                 </div>
                 <div className="mainImage">
-                    <img src="./image/shoes.png" alt="" />
+                    <img src={shoes} alt="" />
                 </div>
             </div>
             <div className="mainSocial">

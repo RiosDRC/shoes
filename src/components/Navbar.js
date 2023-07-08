@@ -1,9 +1,3 @@
-import { Link } from "react-router-dom";
-const handleClick = (id) =>{
-    const section = document.getElementById(id)
-    section.scrollIntoView({behavior: 'smooth'})
-}
-
 const Navbar = () => {
     return (
     <nav className="navbar navbar-expand-sm fixed-top">
@@ -17,19 +11,19 @@ const Navbar = () => {
             <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="nav-link" to="#Home" onClick={()=>handleClick("Home")}>Home</Link>
+                        <a className="nav-link" href="#Home"a>Home</a>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="#Products" onClick={()=>handleClick("Products")}>Products</Link>
+                        <a className="nav-link" href="#Products">Products</a>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="#About" onClick={()=>handleClick("About")}>About</Link>
+                        <a className="nav-link" href="#About">About</a>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="#Review" onClick={()=>handleClick("Review")}>Review</Link>
+                        <a className="nav-link" href="#Review">Review</a>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="#Services" onClick={()=>handleClick("Services")}>Services</Link>
+                        <a className="nav-link" href="#Services">Services</a>
                     </li>
                 </ul>
             </div>

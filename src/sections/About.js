@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link} from "react-router-dom";
+import { red_shoes1, red_shoes2, red_shoes3, red_shoes4 } from "../assets"
 
 const About = () => {
-    const [image, setImage] = useState("./image/red_shoes1.png")
+    const [image, setImage] = useState(red_shoes1)
 
     const handleClick = (e)=>{
         setImage(e.target.currentSrc)
@@ -14,10 +15,10 @@ const About = () => {
             <div className="aboutContent">
                 <div className="aboutImage">
                     <div className="aboutSmallImage">
-                        <img src="./image/red_shoes1.png" alt="" onMouseOver={handleClick}/>
-                        <img src="./image/red_shoes2.png" alt="" onMouseOver={handleClick}/>
-                        <img src="./image/red_shoes3.png" alt="" onMouseOver={handleClick}/>
-                        <img src="./image/red_shoes4.png" alt="" onMouseOver={handleClick}/>
+                        <img src={red_shoes1} alt="" onMouseOver={handleClick}/>
+                        <img src={red_shoes2} alt="" onMouseOver={handleClick}/>
+                        <img src={red_shoes3} alt="" onMouseOver={handleClick}/>
+                        <img src={red_shoes4} alt="" onMouseOver={handleClick}/>
                     </div>
 
                     <div className="imageContainer">

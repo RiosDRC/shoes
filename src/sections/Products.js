@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom"
 import { calcStars } from "../functions/functions.js"
+import { shoes1, shoes2, shoes3, shoes4, shoes5, shoes6, shoes7, shoes8 } from "../assets/"
 
 const Products = () => {
     const products = [
         {
             id: 1,
             brand: "Nike",
-            img: "shoes1.png",
+            img: shoes1,
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
             price: 100.99,
             stars: 2.5
@@ -14,7 +15,7 @@ const Products = () => {
         {
             id: 2,
             brand: "Nike",
-            img: "shoes2.png",
+            img: shoes2,
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
             price: 200.99,
             stars: 4.5
@@ -22,7 +23,7 @@ const Products = () => {
         {
             id: 3,
             brand: "Nike",
-            img: "shoes3.png",
+            img: shoes3,
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
             price: 175.99,
             stars: 3.5
@@ -30,7 +31,7 @@ const Products = () => {
         {
             id: 4,
             brand: "Nike",
-            img: "shoes4.png",
+            img: shoes4,
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
             price: 120.99,
             stars: 4
@@ -38,7 +39,7 @@ const Products = () => {
         {
             id: 5,
             brand: "Nike",
-            img: "shoes5.png",
+            img: shoes5,
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
             price: 150.99,
             stars: 5
@@ -46,7 +47,7 @@ const Products = () => {
         {
             id: 6,
             brand: "Nike",
-            img: "shoes6.png",
+            img: shoes6,
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
             price: 220.99,
             stars: 4.5
@@ -54,7 +55,7 @@ const Products = () => {
         {
             id: 7,
             brand: "Nike",
-            img: "shoes7.png",
+            img: shoes7,
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
             price: 110.99,
             stars: 3
@@ -62,7 +63,7 @@ const Products = () => {
         {
             id: 8,
             brand: "Nike",
-            img: "shoes8.png",
+            img: shoes8,
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
             price: 150.99,
             stars: 5
@@ -80,7 +81,7 @@ const Products = () => {
                             <i className="fa-solid fa-share"></i>
                         </div>
                         <div className="image">
-                            <img src={`./image/${product.img}`} alt="" />
+                            <img src={product.img} alt="" />
                         </div>
                         <div className="productText">
                             <h2>{product.brand}</h2>

@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import { facebook, google, logshoes, twitter } from "../assets";
 
 const Login = () => {
     return (
         <div className="login">
             <div className="left">
-                <img src="./image/logshoes.png" alt="" />
+                <img src={logshoes} alt="" />
             </div>
             <div className="right">
                 <h1>Welcome Back!</h1>
@@ -26,9 +27,9 @@ const Login = () => {
                     <button>Login</button>
 
                     <div className="loginIcons">
-                        <Link><img src="./image/google.png" alt="" /></Link>
-                        <Link><img src="./image/facebook.png" alt="" /></Link>
-                        <Link><img src="./image/twitter.png" alt="" /></Link>
+                        <Link><img src={google} alt="" /></Link>
+                        <Link><img src={facebook} alt="" /></Link>
+                        <Link><img src={twitter} alt="" /></Link>
                     </div>
                 </form>
             </div>
