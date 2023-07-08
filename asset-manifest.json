@@ -1,15 +1,35 @@
 {
   "files": {
-    "main.css": "/shoes/static/css/main.a01fc775.css",
-    "main.js": "/shoes/static/js/main.178cd2f8.js",
+    "main.css": "/shoes/static/css/main.d2c47351.css",
+    "main.js": "/shoes/static/js/main.1aa47131.js",
+    "static/media/logshoes.png": "/shoes/static/media/logshoes.500821278dc0e3cdb3e3.png",
     "static/media/loging_bg.png": "/shoes/static/media/loging_bg.af864304b5b91ade9d71.png",
+    "static/media/shoes4.png": "/shoes/static/media/shoes4.962bde9a386431afe8c8.png",
+    "static/media/shoes3.png": "/shoes/static/media/shoes3.66ffc4929b74c68f45ea.png",
+    "static/media/red_shoes1.png": "/shoes/static/media/red_shoes1.5ba2562e738e8d3f2d41.png",
+    "static/media/shoes6.png": "/shoes/static/media/shoes6.225eb1d82fc53c8fb6ee.png",
+    "static/media/shoes1.png": "/shoes/static/media/shoes1.b01ead11647fac603b46.png",
+    "static/media/shoes7.png": "/shoes/static/media/shoes7.3e1692b2799ad0b09886.png",
+    "static/media/shoes5.png": "/shoes/static/media/shoes5.90f521d62285b3d71a3d.png",
+    "static/media/shoes2.png": "/shoes/static/media/shoes2.146bba8b827ce6df8285.png",
+    "static/media/shoes8.png": "/shoes/static/media/shoes8.2a54d9682318b6366361.png",
     "static/media/bg1.png": "/shoes/static/media/bg1.34a0104c2a12e713dfcf.png",
+    "static/media/shoes.png": "/shoes/static/media/shoes.37ed22cb4cd360d34c7f.png",
+    "static/media/red_shoes2.png": "/shoes/static/media/red_shoes2.31411fd0391f50739eeb.png",
+    "static/media/red_shoes3.png": "/shoes/static/media/red_shoes3.fa04913b764aeaf37385.png",
+    "static/media/red_shoes4.png": "/shoes/static/media/red_shoes4.eef501313d9a195b26ba.png",
+    "static/media/man_dp1.jpg": "/shoes/static/media/man_dp1.a623eee0ad5846417577.jpg",
+    "static/media/girl_dp1.jpg": "/shoes/static/media/girl_dp1.c1af503772290d92698d.jpg",
+    "static/media/man_dp3.jpg": "/shoes/static/media/man_dp3.831c5b1420d293fe8a38.jpg",
+    "static/media/girl_dp2.jpg": "/shoes/static/media/girl_dp2.103f6913d6532fb995d4.jpg",
+    "static/media/man_dp2.jpg": "/shoes/static/media/man_dp2.f43ddf3129ddc9305bbd.jpg",
+    "static/media/girl_dp3.jpg": "/shoes/static/media/girl_dp3.39a027715e57a291978b.jpg",
     "index.html": "/shoes/index.html",
-    "main.a01fc775.css.map": "/shoes/static/css/main.a01fc775.css.map",
-    "main.178cd2f8.js.map": "/shoes/static/js/main.178cd2f8.js.map"
+    "main.d2c47351.css.map": "/shoes/static/css/main.d2c47351.css.map",
+    "main.1aa47131.js.map": "/shoes/static/js/main.1aa47131.js.map"
   },
   "entrypoints": [
-    "static/css/main.a01fc775.css",
-    "static/js/main.178cd2f8.js"
+    "static/css/main.d2c47351.css",
+    "static/js/main.1aa47131.js"
   ]
 }
