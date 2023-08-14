@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shoes/static/css/main.cb99d1c3.css",
-    "main.js": "/shoes/static/js/main.3d95b550.js",
+    "main.css": "/shoes/static/css/main.f4d0ee0d.css",
+    "main.js": "/shoes/static/js/main.240493d0.js",
     "static/media/logshoes.png": "/shoes/static/media/logshoes.500821278dc0e3cdb3e3.png",
     "static/media/loging_bg.png": "/shoes/static/media/loging_bg.af864304b5b91ade9d71.png",
     "static/media/shoes4.png": "/shoes/static/media/shoes4.962bde9a386431afe8c8.png",
@@ -25,11 +25,11 @@
     "static/media/man_dp2.jpg": "/shoes/static/media/man_dp2.f43ddf3129ddc9305bbd.jpg",
     "static/media/girl_dp3.jpg": "/shoes/static/media/girl_dp3.39a027715e57a291978b.jpg",
     "index.html": "/shoes/index.html",
-    "main.cb99d1c3.css.map": "/shoes/static/css/main.cb99d1c3.css.map",
-    "main.3d95b550.js.map": "/shoes/static/js/main.3d95b550.js.map"
+    "main.f4d0ee0d.css.map": "/shoes/static/css/main.f4d0ee0d.css.map",
+    "main.240493d0.js.map": "/shoes/static/js/main.240493d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb99d1c3.css",
-    "static/js/main.3d95b550.js"
+    "static/css/main.f4d0ee0d.css",
+    "static/js/main.240493d0.js"
   ]
 }
