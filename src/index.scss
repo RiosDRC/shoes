@@ -37,6 +37,13 @@ html{
 
 //navbar
 .navbar{
+
+  #navbarNav {
+    li {
+      margin-left: 0;
+    }
+  }
+
   @media (max-width:800px) {
   max-width: 800px;
   }
@@ -72,8 +79,10 @@ html{
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 10px;
+        gap: 13px;
         font-size: 18px;
+        margin-left: 0;
+        translate: (.5rem);
 
         .icons-boxCard {
           position: relative;
@@ -244,6 +253,7 @@ html{
       }
 
       .cartProducts {
+        margin-top: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;

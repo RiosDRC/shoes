@@ -16,7 +16,7 @@ const Navbar = () => {
             <a href="/" id="logo" className="navbar-brand justify-content-start">
                 <h1>Shoe<span>s</span></h1>
             </a>
-            <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div className="collapse navbar-collapse justify-content-start" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <a className="nav-link" href="#Home">Home</a>
@@ -36,20 +36,20 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="icons-box">
-                <div className="icons-boxCard" onClick={() => {setIsFavVisible(prev=>!prev); setIsCartVisible(false); setIsUserVisible(false)}}>
-                    <i className="fa-solid fa-heart"/>
+                <div className="icons-boxCard"onClick={() => {setIsFavVisible(prev=>!prev); setIsCartVisible(false); setIsUserVisible(false)}}>
+                    <i className="fa-solid fa-heart" style={isFavVisible ?{color: '#6c14d0'} : null}/>
                     {userChoices.fav.length > 0
                     ? <h4>{userChoices.fav.length}</h4>
                     : null}
                 </div>
                 <div className="icons-boxCard" onClick={() => {setIsCartVisible(prev=>!prev); setIsFavVisible(false); setIsUserVisible(false)}}>
-                    <i className="fa-solid fa-cart-shopping"/>
+                    <i className="fa-solid fa-cart-shopping" style={isCartVisible ?{color: '#6c14d0'} : null}/>
                     {userChoices.onCart.length > 0
                     ? <h4>{userChoices.onCart.length}</h4>
                     : null}
                 </div>
                 <div className="icons-boxCard"  onClick={() => {setIsUserVisible(prev=>!prev); setIsFavVisible(false); setIsCartVisible(false)}}>
-                    <i className="fa-solid fa-user"/>
+                    <i className="fa-solid fa-user" style={isUserVisible ?{color: '#6c14d0'} : null}/>
                 </div>
             </div>
         </div>
