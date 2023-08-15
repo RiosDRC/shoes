@@ -1,7 +1,12 @@
-import { Link } from "react-router-dom";
 import { shoes } from "../assets/"
+import { useState } from "react";
 
 const Main = () => {
+    const [facebook, setFacebook ] = useState(false)
+    const [instagram, setInstagram ] = useState(false)
+    const [twitter, setTwitter ] = useState(false)
+    const [ linkedIn, setLinkedIn ] = useState(false)
+
     return (
         <div className="main" id="Home">
             <div className="main_content">
@@ -19,13 +24,13 @@ const Main = () => {
                 </div>
             </div>
             <div className="mainSocial">
-                <i className="fa-brands fa-facebook-f fa-bounce"></i>
-                <i className="fa-brands fa-instagram fa-bounce"></i>
-                <i className="fa-brands fa-twitter fa-bounce"></i>
-                <i className="fa-brands fa-linkedin-in fa-bounce"></i>
+                <i className={`fa-brands fa-facebook-f ${facebook ? 'fa-bounce' : ''}`} onMouseOver={()=>{setFacebook(true)}} onMouseLeave={()=>{setFacebook(false)}}/>
+                <i className={`fa-brands fa-instagram ${instagram ? 'fa-bounce' : ''}`} onMouseOver={()=>{setInstagram(true)}} onMouseLeave={()=>{setInstagram(false)}}/>
+                <i className={`fa-brands fa-twitter ${twitter ? 'fa-bounce' : ''}`} onMouseOver={()=>{setTwitter(true)}} onMouseLeave={()=>{setTwitter(false)}}/>
+                <i className={`fa-brands fa-linkedin-in ${linkedIn ? 'fa-bounce' : ''}`} onMouseOver={()=>{setLinkedIn(true)}} onMouseLeave={()=>{setLinkedIn(false)}}/>
             </div>
             <div className="mainButton">
-                <Link>SHOP NOW</Link>
+                <a href='#Products' >SHOP NOW</a>
                 <i className="fa-solid fa-chevron-right"></i>
             </div>
         </div>

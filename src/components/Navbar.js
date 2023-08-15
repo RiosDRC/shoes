@@ -1,4 +1,12 @@
+import { useContext } from "react";
+import { DataContext } from "../context/DataContext";
+import FavWindow from "./FavWindow";
+import CartWindow from "./CartWindow";
+import UserWindow from "./UserWindow";
+
 const Navbar = () => {
+    const { userChoices, isFavVisible, setIsFavVisible, isCartVisible, setIsCartVisible, isUserVisible, setIsUserVisible } = useContext(DataContext);
+
     return (
     <nav className="navbar navbar-expand-sm fixed-top">
         <div className="container-fluid">
@@ -27,12 +35,36 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <div className="icons">
-                <i className="fa-solid fa-heart"></i>
-                <i className="fa-solid fa-cart-shopping"></i>
-                <i className="fa-solid fa-user"></i>
+            <div className="icons-box">
+                <div className="icons-boxCard" onClick={() => {setIsFavVisible(prev=>!prev); setIsCartVisible(false); setIsUserVisible(false)}}>
+                    <i className="fa-solid fa-heart"/>
+                    {userChoices.fav.length > 0
+                    ? <h4>{userChoices.fav.length}</h4>
+                    : null}
+                </div>
+                <div className="icons-boxCard" onClick={() => {setIsCartVisible(prev=>!prev); setIsFavVisible(false); setIsUserVisible(false)}}>
+                    <i className="fa-solid fa-cart-shopping"/>
+                    {userChoices.onCart.length > 0
+                    ? <h4>{userChoices.onCart.length}</h4>
+                    : null}
+                </div>
+                <div className="icons-boxCard"  onClick={() => {setIsUserVisible(prev=>!prev); setIsFavVisible(false); setIsCartVisible(false)}}>
+                    <i className="fa-solid fa-user"/>
+                </div>
             </div>
         </div>
+        {isFavVisible
+        ? <FavWindow/>
+        : null
+        }
+        {isCartVisible
+        ? <CartWindow/>
+        : null
+        }
+        {isUserVisible
+        ? <UserWindow/>
+        : null
+        }
     </nav>
     );
 }

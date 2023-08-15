@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { red_shoes1, red_shoes2, red_shoes3, red_shoes4 } from "../assets"
 
 const About = () => {

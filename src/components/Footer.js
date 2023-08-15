@@ -33,11 +33,11 @@ const Footer = () => {
                         <Link><i className="fa-brands fa-linkedin-in"></i></Link>
                     </div>
                 </div>
-                <div className="tagSubscription">
+                <form className="tagSubscription" onSubmit={e=>e.preventDefault()}>
                     <h1>Newsletter</h1>
-                    <input type="text" placeholder="Your email here"/>
-                    <button>Subscribe</button>
-                </div>
+                    <input type="text" required placeholder="Your email here"/>
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
     );
